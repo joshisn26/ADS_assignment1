@@ -1,0 +1,25 @@
+06/24/2017 04:19:27 PM Connection created
+06/24/2017 04:19:27 PM Bucket created
+06/24/2017 04:19:27 PM Calling paginated s3:list_objects with {'Bucket': 'team7_pa_assignment1'}
+06/24/2017 04:19:27 PM Starting new HTTPS connection (1): s3.amazonaws.com
+06/24/2017 04:19:31 PM Data downloaded fron config file path
+06/24/2017 04:19:31 PM Calling paginated s3:list_objects with {'Bucket': 'team7_pa_assignment1'}
+06/24/2017 04:19:31 PM Starting new HTTPS connection (2): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (3): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (4): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (5): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (6): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (7): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (8): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (9): s3.amazonaws.com
+06/24/2017 04:19:31 PM Starting new HTTPS connection (10): s3.amazonaws.com
+06/24/2017 04:19:41 PM Latest Data From bucket downloaded
+06/24/2017 04:19:48 PM Calling paginated s3:list_objects with {'Bucket': 'team7_pa_assignment1', 'Prefix': 'PA_240617_WBAN_14737.csv'}
+06/24/2017 04:19:48 PM Resetting dropped connection: s3.amazonaws.com
+06/24/2017 04:19:48 PM File already exists in your bucket!!Please remove duplicate file.
+06/24/2017 04:22:13 PM Bucket created
+06/24/2017 04:22:13 PM Calling paginated s3:list_objects with {'Bucket': 'team7_pa_assignment1'}
+06/24/2017 04:22:13 PM Starting new HTTPS connection (1): s3.amazonaws.com
+06/24/2017 04:23:14 PM Calling s3:put_object with {'Bucket': 'team7_pa_assignment1', 'Key': 'PA_240617_WBAN_14737.csv', 'Body': <_io.BufferedReader name='PA_240617_WBAN_14737.csv'>}
+06/24/2017 04:23:14 PM Resetting dropped connection: s3.amazonaws.com
+06/24/2017 04:26:30 PM Bucket empty: Initial data uploaded
