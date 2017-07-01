@@ -3,6 +3,11 @@
 
 # In[ ]:
 
+
+
+
+# In[ ]:
+
 import json
 import urllib.request
 import boto3
@@ -51,8 +56,8 @@ else:
         fname = 'raw_data.csv'
         urllib.request.urlretrieve(rawurl, fname)
         data = pd.read_csv(fname)
-        data.drop(['HOURLYSKYCONDITIONS','HOURLYPRSENTWEATHERTYPE', 'DAILYMaximumDryBulbTemp','DAILYMinimumDryBulbTemp', 'DAILYAverageDryBulbTemp', 'DAILYDeptFromNormalAverageTemp', 'DAILYAverageRelativeHumidity', 'DAILYAverageDewPointTemp','DAILYAverageWetBulbTemp','DAILYHeatingDegreeDays', 'DAILYCoolingDegreeDays', 'DAILYWeather', 'DAILYPrecip', 'DAILYSnowfall','DAILYSnowDepth', 'DAILYAverageStationPressure', 'DAILYAverageSeaLevelPressure', 'DAILYAverageWindSpeed', 'DAILYPeakWindSpeed' , 'PeakWindDirection','DAILYSustainedWindSpeed','DAILYSustainedWindDirection', 'MonthlyMaxSeaLevelPressureDate', 'MonthlyMaxSeaLevelPressureTime', 'MonthlyMinSeaLevelPressureDate', 'MonthlyMinSeaLevelPressureTime', 'MonthlyTotalHeatingDegreeDays', 'MonthlyTotalCoolingDegreeDays', 'MonthlyDeptFromNormalHeatingDD', 'MonthlyDeptFromNormalCoolingDD','MonthlyTotalSeasonToDateHeatingDD','MonthlyTotalSeasonToDateCoolingDD','MonthlyAverageRH','MonthlyDewpointTemp','MonthlyWetBulbTemp','MonthlyAverageRH','MonthlyAvgHeatingDegreeDays','MonthlyAvgCoolingDegreeDays','MonthlyStationPressure','MonthlySeaLevelPressure','MonthlyAverageWindSpeed','MonthlyTotalSnowfall','MonthlyDeptFromNormalMaximumTemp','MonthlyDeptFromNormalMinimumTemp','MonthlyDeptFromNormalAverageTemp','MonthlyDeptFromNormalPrecip','MonthlyTotalLiquidPrecip','MonthlyGreatestPrecip','MonthlyGreatestPrecipDate','MonthlyGreatestSnowfall','MonthlyGreatestSnowfallDate','MonthlyGreatestSnowDepth', 'MonthlyGreatestSnowDepthDate','MonthlyDaysWithGT90Temp','MonthlyDaysWithLT32Temp','MonthlyDaysWithGT32Temp','MonthlyDaysWithLT0Temp','MonthlyDaysWithGT001Precip','MonthlyDaysWithGT010Precip','MonthlyDaysWithGT1Snow','MonthlyMaxSeaLevelPressureValue','MonthlyMinSeaLevelPressureValue'],inplace=True,axis=1,errors='ignore')                         
-data.update(data[['HOURLYDRYBULBTEMPF','HOURLYDRYBULBTEMPC','HOURLYWETBULBTEMPF','HOURLYWETBULBTEMPC','HOURLYWindGustSpeed','HOURLYPressureTendency', 'HOURLYPressureChange', 'HOURLYVISIBILITY','MonthlyMaximumTemp','MonthlyMinimumTemp','MonthlyMeanTemp']].fillna(0))
+        data.drop(['HOURLYSKYCONDITIONS','HOURLYPRSENTWEATHERTYPE', 'DAILYMaximumDryBulbTemp','DAILYMinimumDryBulbTemp', 'DAILYAverageDryBulbTemp', 'DAILYDeptFromNormalAverageTemp', 'DAILYAverageRelativeHumidity', 'DAILYAverageDewPointTemp','DAILYAverageWetBulbTemp','DAILYHeatingDegreeDays', 'DAILYCoolingDegreeDays', 'DAILYWeather', 'DAILYPrecip', 'DAILYSnowfall','DAILYSnowDepth', 'DAILYAverageStationPressure', 'DAILYAverageSeaLevelPressure', 'DAILYAverageWindSpeed', 'DAILYPeakWindSpeed' , 'PeakWindDirection','DAILYSustainedWindSpeed','DAILYSustainedWindDirection', 'MonthlyMaxSeaLevelPressureDate', 'MonthlyMaxSeaLevelPressureTime', 'MonthlyMinSeaLevelPressureDate', 'MonthlyMinSeaLevelPressureTime', 'MonthlyTotalHeatingDegreeDays', 'MonthlyTotalCoolingDegreeDays', 'MonthlyDeptFromNormalHeatingDD', 'MonthlyDeptFromNormalCoolingDD','MonthlyTotalSeasonToDateHeatingDD','MonthlyTotalSeasonToDateCoolingDD','MonthlyAverageRH','MonthlyDewpointTemp','MonthlyWetBulbTemp','MonthlyAverageRH','MonthlyAvgHeatingDegreeDays','MonthlyAvgCoolingDegreeDays','MonthlyStationPressure','MonthlySeaLevelPressure','MonthlyAverageWindSpeed','MonthlyTotalSnowfall','MonthlyDeptFromNormalMaximumTemp','MonthlyDeptFromNormalMinimumTemp','MonthlyDeptFromNormalAverageTemp','MonthlyDeptFromNormalPrecip','MonthlyTotalLiquidPrecip','MonthlyGreatestPrecip','MonthlyGreatestPrecipDate','MonthlyGreatestSnowfall','MonthlyGreatestSnowfallDate','MonthlyGreatestSnowDepth', 'MonthlyGreatestSnowDepthDate','MonthlyDaysWithGT90Temp','MonthlyDaysWithLT32Temp','MonthlyDaysWithGT32Temp','MonthlyDaysWithLT0Temp','MonthlyDaysWithGT001Precip','MonthlyDaysWithGT010Precip','MonthlyDaysWithGT1Snow','MonthlyMaxSeaLevelPressureValue','MonthlyMinSeaLevelPressureValue'],inplace=True,axis=1,errors='ignore')                                     
+        data.update(data[['HOURLYDRYBULBTEMPF','HOURLYDRYBULBTEMPC','HOURLYWETBULBTEMPF','HOURLYWETBULBTEMPC','HOURLYWindGustSpeed','HOURLYPressureTendency', 'HOURLYPressureChange', 'HOURLYVISIBILITY','MonthlyMaximumTemp','MonthlyMinimumTemp','MonthlyMeanTemp']].fillna(0))
         newfile = 'PA_' +'{:%d%m%y}'.format(d) +'_WBAN_14737_clean.csv'
         data.to_csv(newfile, index=False)
         key = newfile
@@ -66,6 +71,7 @@ data.update(data[['HOURLYDRYBULBTEMPF','HOURLYDRYBULBTEMPC','HOURLYWETBULBTEMPF'
             logging.info('Clean file uploaded')
 
     os.chdir(cwd)
+
 
 
 

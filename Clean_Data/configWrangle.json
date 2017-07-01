@@ -1,7 +1,7 @@
 {
   "state": "PA",
   "team": 7,
-  "rawData": "https://s3.amazonaws.com/team7pa_assignment1/PA1_250617_WBAN_14737.csv",
+  "rawData": "https://s3.amazonaws.com/team7pa_assignment1/PA1_010717_WBAN_14737.csv",
   "cleanData": "",
   "AWSAccess":"",
   "AWSSecret":"",

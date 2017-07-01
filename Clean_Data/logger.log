@@ -11,3 +11,9 @@
 06/24/2017 11:10:11 PM Resetting dropped connection: s3.amazonaws.com
 06/24/2017 11:10:11 PM Calling s3:put_object with {'Bucket': 'team7pa_assignment1', 'Key': 'PA_240617_WBAN_14737_clean.csv', 'Body': <_io.BufferedReader name='PA_240617_WBAN_14737_clean.csv'>}
 06/24/2017 11:11:29 PM Clean file uploaded
+07/01/2017 02:00:49 PM Connection created
+07/01/2017 02:00:49 PM Calling paginated s3:list_objects with {'Bucket': 'team7pa_assignment1'}
+07/01/2017 02:00:49 PM Starting new HTTPS connection (1): s3.amazonaws.com
+07/01/2017 02:48:16 PM Connection created
+07/01/2017 02:48:16 PM Calling paginated s3:list_objects with {'Bucket': 'team7pa_assignment1'}
+07/01/2017 02:48:16 PM Starting new HTTPS connection (1): s3.amazonaws.com

@@ -1,8 +1,8 @@
 {
   "state": "PY",
   "team": 7,
-  "link": "https://www.ncei.noaa.gov/orders/cdo/1001797.csv",
+  "link": "https://www.ncei.noaa.gov/orders/cdo/1009661.csv",
   "AWSAccess":"",
   "AWSSecret":"",
-  "notificationEmail":"joshi.sn@husky.neu.edu"
+  "notificationEmail":"shah.vip@husky.neu.edu"
 }

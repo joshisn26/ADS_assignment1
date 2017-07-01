@@ -11,7 +11,7 @@ WORKDIR /Assignment1
 
 EXPOSE 8888
 
-ADD *.py *.json /Assignment1/
+ADD *.py *.json  *.ipynb /Assignment1/
 ADD rawdata.csv /Assignment1/
 #ADD run.sh /Assignment1/
 

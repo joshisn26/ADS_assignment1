@@ -17,11 +17,11 @@ ADD cleanDataEDA.ipynb /Assignment1/
 
 
 #RUN chmod 755 /Assignment1/run.sh
-RUN chmod 755 /Assignment1/wrangle_final.py
+RUN chmod 755 /Assignment1/wrangle.py
 RUN chmod 755 /Assignment1
 RUN chmod 755 /Assignment1/*
 
-CMD ["python", "wrangle_final.py"]
+CMD ["python", "wrangle.py"]
 
 
 
